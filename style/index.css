@@ -1,0 +1,104 @@
+.container-body {
+    margin: auto;
+    background-color: white;
+    width: 59.5%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+ul.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+    list-style: none;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border: 2px solid rgb(107, 107, 107);
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu-slider {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.menu-slider li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-slider li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 90%;
+    margin-top: 70px;
+}
+
+.container-tarjetas {
+    display: inline-flex;
+    margin: 50px 65px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.image-carta {
+    text-align: center;
+    height: 350px;
+}
+
+.contenedor-carta {
+    text-align: center;
+    margin: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container-body {
+        width: 92%;
+    }
+    ul.slider {
+        width: 100%;
+        height: 225px;
+    }
+    ul.slider li img {
+        height: 300px;
+    }
+    .menu-slider {
+        padding-right: 65px;
+    }
+    .container-tarjetas {
+        display: inline-flex;
+        margin: 50px 30px 50px 60px;
+        padding-bottom: 10px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
